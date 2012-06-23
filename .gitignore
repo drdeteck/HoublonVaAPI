@@ -6,3 +6,6 @@ deploy/*
 *.suo
 *.cache
 TestResults/
+packages
+packages/*
+HoublonVa.Service/Web.Debug.config

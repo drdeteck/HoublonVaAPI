@@ -4,18 +4,23 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
-using Service.Model;
+using HoublonVa.Business.Managers;
 
-namespace Service.API
+namespace HoublonVa.Service.API
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Place" in code, svc and config file together.
     public class Place : IPlace
     {
+        private BaseManager _manager = null;
+
+        public Place()
+        {
+            this._manager = new PlaceManager();
+        }
+
         public string XmlData(string id)
         {
-            var a = new Entities();
-            Test b = a.Tests.FirstOrDefault();
-            return string.Concat("xml ", id, " ", b.Name);
+            return string.Concat("xml ", id, " ", this._manager.IsAlive.ToString());
         }
 
         public string JsonData(string id)

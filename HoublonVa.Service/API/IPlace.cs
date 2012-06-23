@@ -9,12 +9,12 @@ using System.ServiceModel.Web;
 namespace HoublonVa.Service.API
 {
     [ServiceContract]
-    public interface IPlaceService
+    public interface IPlace
     {
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "json/{id}")]
         string JsonData(string id);
-
+        
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Xml, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "xml/{id}")]
         string XmlData(string id);
