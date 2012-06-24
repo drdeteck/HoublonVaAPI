@@ -18,5 +18,9 @@ namespace HoublonVa.Service.API
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Xml, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "xml/{id}")]
         string XmlData(string id);
+
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "GetNearestPlace?lng={longitude}&lat={latitude}&qt={quantity}")]
+        string GetNearestPlace(string longitude, string latitude, string quantity);
     }
 }

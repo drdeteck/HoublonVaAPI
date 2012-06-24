@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="Service.API.Place" CodeBehind="Place.svc.cs" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="HoublonVa.Service.API.Place" CodeBehind="Place.svc.cs" %>
