@@ -8,4 +8,3 @@ deploy/*
 TestResults/
 packages
 packages/*
-HoublonVa.Service/Web.Debug.config
