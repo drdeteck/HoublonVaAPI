@@ -66,6 +66,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="API\Place.svc" />
+    <Content Include="Scripts\jquery.mobile-1.1.1.js" />
+    <Content Include="Scripts\jquery.mobile.js" />
     <Content Include="Styles\Images\ajax-loader.gif" />
     <Content Include="Styles\Images\ajax-loader.png" />
     <Content Include="Styles\Images\icons-18-black.png" />
@@ -77,6 +79,10 @@
     <Content Include="Scripts\jquery.mobile-1.1.0.js" />
     <Content Include="Scripts\script.js" />
     <Content Include="Styles\jquery.mobile-1.1.0.css" />
+    <Content Include="Styles\jquery.mobile-1.1.1.css" />
+    <Content Include="Styles\jquery.mobile.css" />
+    <Content Include="Styles\jquery.mobile.structure-1.1.1.css" />
+    <Content Include="Styles\jquery.mobile.theme-1.1.1.css" />
     <Content Include="Styles\style.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
