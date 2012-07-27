@@ -1,0 +1,27 @@
+.center
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.float-left
+{
+	float: left;
+}
+
+.float-right
+{
+	float: right;
+}
+
+.fclear-left
+{
+	float: left;
+	clear: left; 
+}
+
+.fclear-right
+{
+	float: right;
+	clear: right; 
+}
