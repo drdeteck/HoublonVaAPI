@@ -12,13 +12,112 @@
         
         <link rel="stylesheet" type="text/css" href="Styles/jquery.mobile.css" />
         <link rel="stylesheet" type="text/css" href="Styles/style.css" />
+
+        <!-- Favorite Icon -->
+        <link href="Styles/Images/favicon.ico" rel="icon" type="image/x-icon">
+
+        <!-- iOS WebClip icons -->
+        <link rel="apple-touch-icon" href="Styles/Images/logo57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="Styles/Images/logo72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="Styles/Images/logo114.png" />
+
+        <script type="text/javascript">
+            $(document).ready(HV.GeoPlace.initialization);
+        </script>
     </head>
     <body class="center">
-        <div id="main">
-            <ul id="places-list" data-role="listview" data-theme="a">
+    <div id="fb-root"></div>
+    <script>    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=314465141923575";
+        fjs.parentNode.insertBefore(js, fjs);
+    } (document, 'script', 'facebook-jssdk'));</script>
+
+
+        <!-- The Main Places List -->
+        <div id="main" data-role="page">
+
+            <div data-role="header" data-position="fixed">
+                <!--<a href="javascript:HV.Filter.toggle('hv-filter-micro');" >Microbrasserie</a>-->
+
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                       <!--<legend>Agree to the terms:</legend>-->
+                       <input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
+                       <label for="checkbox-1" class="hv-filter-micro">Microbrasserie</label>
+
+                       <input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" />
+                       <label for="checkbox-2" class="hv-filter-seller">Dépanneur</label>
+
+                       <input type="checkbox" name="checkbox-3" id="checkbox-3" class="custom" />
+                       <label for="checkbox-3" class="hv-filter-pub">Pub artisanal</label>
+                    </fieldset>
+                </div>
+            </div>  
+
+            <div data-role="content">
+                <ul id="hv-places-list" data-role="listview" data-theme="a">
                 
-            </ul>
+                </ul>
+            </div>
+
+            <div data-role="footer">
+                <!-- Navigation Bar -->
+                <div data-role="navbar" data-position="fixed">
+                    <ul>
+                        <li><a href="#main"  class="ui-btn-active ui-state-persist" data-theme="a">Liste</a></li>
+                        <li><a href="#about" data-theme="a">À propos</a></li>
+                    </ul>
+                </div>
+            </div><!-- /footer -->
+
         </div>
+
+
+
+        <!-- Start of second page -->
+        <div data-role="page" id="about" class="min-full-height">
+
+            <div data-role="header">
+                <h1>À propos</h1>
+            </div><!-- /header -->
+
+            <div data-role="content" data-theme="a">	
+                <p class="center">
+                    <a>
+                        <img src="/Styles/Images/logo72.png" alt="Houblon va?" />
+                        <span>Houblon va? - Le site web</span>
+                    </a>
+                </p>
+
+                <p class="center">
+                    <a href="https://twitter.com/HoublonVa" class="twitter-follow-button" data-show-count="true" data-lang="fr" data-size="large">Suivre Patate</a>
+                    <script>    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } } (document, "script", "twitter-wjs");</script>
+                </p>
+                <p class="center">
+                    <div class="fb-like center" data-href="http://www.facebook.com/HoublonVa" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+                </p>
+
+                <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my ID is beeing clicked.</p>		
+                <p><a href="#main">Back to foo</a></p>	
+            </div><!-- /content -->
+
+            <div data-role="footer">
+                <!-- Navigation Bar -->
+                <div data-role="navbar" data-position="fixed">
+                    <ul>
+                        <li><a href="#main" data-theme="a">Liste</a></li>
+                        <li><a href="#about" class="ui-btn-active ui-state-persist" data-theme="a">À propos</a></li>
+                    </ul>
+                </div>
+            </div><!-- /footer -->
+
+
+
+        </div><!-- /page -->
+
     </body>
 </html>
 

@@ -1,27 +1,57 @@
 .center
 {
-	margin-left: auto;
-	margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .float-left
 {
-	float: left;
+    float: left;
 }
 
 .float-right
 {
-	float: right;
+    float: right;
 }
 
 .fclear-left
 {
-	float: left;
-	clear: left; 
+    float: left;
+    clear: left; 
 }
 
 .fclear-right
 {
-	float: right;
-	clear: right; 
+    float: right;
+    clear: right; 
+}
+
+/***************/
+/* Houblon Va? */
+/***************/
+
+#hv-navbar 
+{
+    display: none;
+}
+
+.min-full-height 
+{
+    min-height: 100%;
+}
+
+.hv-filter-micro 
+{
+    color: Orange;
+}
+
+.hv-filter-seller
+{
+    color: Red;
+}
+
+.hv-filter-pub
+{
+    color: Yellow;
 }

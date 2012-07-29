@@ -70,6 +70,7 @@
     <Content Include="Scripts\jquery.mobile.js" />
     <Content Include="Styles\Images\ajax-loader.gif" />
     <Content Include="Styles\Images\ajax-loader.png" />
+    <Content Include="Styles\Images\favicon.ico" />
     <Content Include="Styles\Images\icons-18-black.png" />
     <Content Include="Styles\Images\icons-18-white.png" />
     <Content Include="Styles\Images\icons-36-black.png" />
@@ -78,6 +79,9 @@
     <Content Include="Scripts\jquery-1.7.2.js" />
     <Content Include="Scripts\jquery.mobile-1.1.0.js" />
     <Content Include="Scripts\script.js" />
+    <Content Include="Styles\Images\logo114.png" />
+    <Content Include="Styles\Images\logo57.png" />
+    <Content Include="Styles\Images\logo72.png" />
     <Content Include="Styles\jquery.mobile-1.1.0.css" />
     <Content Include="Styles\jquery.mobile-1.1.1.css" />
     <Content Include="Styles\jquery.mobile.css" />
